@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jack Russell Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="scores">
+      <div class="score-card x-card">
+        <span class="score-label">Player X</span>
+        <span class="score-value" id="score-x">0</span>
+      </div>
+      <div class="score-card draw-card">
+        <span class="score-label">Draws</span>
+        <span class="score-value" id="score-draw">0</span>
+      </div>
+      <div class="score-card o-card">
+        <span class="score-label">Player O</span>
+        <span class="score-value" id="score-o">0</span>
+      </div>
+    </div>
+
+    <div class="status" id="status">Player X's turn</div>
+
+    <div class="board-scene">
+      <div class="board-wrapper" id="board-wrapper">
+        <div class="board" id="board">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+      </div>
+    </div>
+
+    <button class="reset-btn" id="reset-btn">New Game</button>
+
+    <footer>Created by <a href="https://jackrussell.digital" target="_blank" rel="noopener noreferrer">Jack Russell</a></footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
